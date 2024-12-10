@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
     <link rel="stylesheet" href="style.css">
+	<style>
+        /* Gallery-specific styles */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery-item {
+            width: 250px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+        .gallery-item h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0 5px;
+        }
+        .gallery-item p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,8 +63,17 @@
     </nav>
     <main>
         <section>
-            <h2>My Experience</h2>
+			<div class="center-container">
+			<div class="gallery-item">
+            <img src="cmthub.jpg" alt="Experience Image 1">
+            <h3>CMTHub</h3>
+			</div>
+        </div>
+		
+		<div class="center-container">
             <p><strong>Internship:</strong> Multimedia Position at CMTHub UiTM Shah Alam - 2024</p>
+		</div>	
+		
         </section>
     </main>
     <footer>
